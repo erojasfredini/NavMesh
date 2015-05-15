@@ -4,3 +4,6 @@ Este proyecto es una implementación de un generador de NavMeshes. Consiste de u
 <img src="http://2.bp.blogspot.com/-v40ezRDULHE/UpRR1yZfv9I/AAAAAAAAAGE/NGZ1v1z0qMI/s1600/NavMeshWalkableObstacle.PNG" width="816"/>
 
 <img src="http://1.bp.blogspot.com/-OK-RdqrR9Ng/UpRR139OJuI/AAAAAAAAAGA/MYw5Y0HY1Pc/s1600/ResultNavMesh.PNG" width="816"/>
+
+# Licencia
+href="http://opensource.org/licenses/LGPL-3.0" target="_blank">GNU Lesser General Public License (LGPLv3)</a>.
