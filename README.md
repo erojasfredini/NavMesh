@@ -10,5 +10,5 @@ Este proyecto es una implementación de un generador de NavMeshes. Consiste de u
 * Mail: erojasfredini@gmail.com
 * Twitter: [https://twitter.com/erojasfredini](https://twitter.com/erojasfredini)
 
-# Licencia
+## Licencia
 [GNU Lesser General Public License](http://www.gnu.org/licenses/lgpl.html) (LGPLv3).
