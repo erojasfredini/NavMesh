@@ -5,5 +5,10 @@ Este proyecto es una implementación de un generador de NavMeshes. Consiste de u
 
 <img src="http://1.bp.blogspot.com/-OK-RdqrR9Ng/UpRR139OJuI/AAAAAAAAAGA/MYw5Y0HY1Pc/s1600/ResultNavMesh.PNG" width="816"/>
 
+## Contacto
+
+* Mail: erojasfredini@gmail.com
+* Twitter: [https://twitter.com/erojasfredini](https://twitter.com/erojasfredini)
+
 # Licencia
-<href="http://opensource.org/licenses/LGPL-3.0" target="_blank">GNU Lesser General Public License</a> (LGPLv3).
+[GNU Lesser General Public License](http://www.gnu.org/licenses/lgpl.html) (LGPLv3).
