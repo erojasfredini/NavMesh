@@ -13,53 +13,53 @@
 
 class PolygonUserController
 {
-	private:
+    private:
 
-		enum ElementType {Rectangle, ConcavePolygon, ConvexPolygon};
+        enum ElementType {Rectangle, ConcavePolygon, ConvexPolygon};
 
-		ElementType _curElementState;
+        ElementType _curElementState;
 
-		bool _enabled;
+        bool _enabled;
 
-		enum ControllerState {Idle, Creating, Editing};
+        enum ControllerState {Idle, Creating, Editing};
 
-		ControllerState _curEditorState;
+        ControllerState _curEditorState;
 
-		ControllerState _prevEditorState;
+        ControllerState _prevEditorState;
 
-		unsigned int _windowHeight;
+        unsigned int _windowHeight;
 
-		bool _movingPolygon;
-		
-		bool _rotatingPolygon;
-		
-		bool _scalingPolygon;
+        bool _movingPolygon;
+        
+        bool _rotatingPolygon;
+        
+        bool _scalingPolygon;
 
-		sf::Vector2i _mousePressPoint;
+        sf::Vector2i _mousePressPoint;
 
-		sf::Vector2i _prevMousePosition;
+        sf::Vector2i _prevMousePosition;
 
-		sf::Vector2i _curMousePosition;
+        sf::Vector2i _curMousePosition;
 
-		GeneralPolygon* _selectedPolygon;
+        GeneralPolygon* _selectedPolygon;
 
-		void _rectangleElementProcessEvent(const sf::Event& event);
+        void _rectangleElementProcessEvent(const sf::Event& event);
 
-		void _concaveElementProcessEvent(const sf::Event& event);
+        void _concaveElementProcessEvent(const sf::Event& event);
 
-		void _convexElementProcessEvent(const sf::Event& event);
+        void _convexElementProcessEvent(const sf::Event& event);
 
-		void _changeControllerState(ControllerState state);
+        void _changeControllerState(ControllerState state);
 
-	public:
+    public:
 
-		PolygonUserController(unsigned int windowHeight);
+        PolygonUserController(unsigned int windowHeight);
 
-		void setEnabled(bool state);
+        void setEnabled(bool state);
 
-		void processUserEvent(const sf::Event& event);
+        void processUserEvent(const sf::Event& event);
 
-		void setElementType(ElementType type);
+        void setElementType(ElementType type);
 
-		ElementType getElementType();
+        ElementType getElementType();
 };

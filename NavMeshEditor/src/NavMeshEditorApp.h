@@ -20,59 +20,59 @@
 
 class NavMeshEditorApp
 {
-	private:
+    private:
 
-		enum EditorState {EditingWalkableRegion, EditingObstacleRegion, ViewingNavMeshResult};
+        enum EditorState {EditingWalkableRegion, EditingObstacleRegion, ViewingNavMeshResult};
 
-		EditorState _curAppState;
+        EditorState _curAppState;
 
-		static NavMeshEditorApp* _instance;
+        static NavMeshEditorApp* _instance;
 
-		NavMeshEditorApp();
+        NavMeshEditorApp();
 
-		int _width;
+        int _width;
 
-		int _height;
+        int _height;
 
-		sf::RenderWindow _App;
+        sf::RenderWindow _App;
 
-		std::vector<GeneralPolygon*> _walkableCuadrilaterals;
+        std::vector<GeneralPolygon*> _walkableCuadrilaterals;
 
-		std::vector<GeneralPolygon*> _obstacleCuadrilaterals;
+        std::vector<GeneralPolygon*> _obstacleCuadrilaterals;
 
-		NavMesh* _pNavMesh;
+        NavMesh* _pNavMesh;
 
-		void _processEvent(const sf::Event& event);
+        void _processEvent(const sf::Event& event);
 
-		void _inicializarCamara();
+        void _inicializarCamara();
 
-		void _render();
+        void _render();
 
-		// Renders the NavMesh current Solution
-		// If only the Union of the Walkable regions are processed then only that will be rendered
-		// If the Intersection of the Walkable and Obstacle regions are processed then that will be rendered
-		// If the final NavMesh tesselation is processed then that final NavMesh will be rendered
-		void _drawNavMeshSolution(const ClipperLib::Polygons& solution);
+        // Renders the NavMesh current Solution
+        // If only the Union of the Walkable regions are processed then only that will be rendered
+        // If the Intersection of the Walkable and Obstacle regions are processed then that will be rendered
+        // If the final NavMesh tesselation is processed then that final NavMesh will be rendered
+        void _drawNavMeshSolution(const ClipperLib::Polygons& solution);
 
-		void _processNavMesh();
+        void _processNavMesh();
 
-		PolygonUserController _polygonUserController;
+        PolygonUserController _polygonUserController;
 
-		void _changeEditorState(EditorState state);
+        void _changeEditorState(EditorState state);
 
-	public:
+    public:
 
-		static NavMeshEditorApp& getInstance();
+        static NavMeshEditorApp& getInstance();
 
-		static sf::RenderWindow& getRenderer();
+        static sf::RenderWindow& getRenderer();
 
-		~NavMeshEditorApp();
+        ~NavMeshEditorApp();
 
-		int run();
+        int run();
 
-		GeneralPolygon* peek(const sf::Vector2f& click);
+        GeneralPolygon* peek(const sf::Vector2f& click);
 
-		GeneralPolygon* peek(const sf::Vector2i& click);
+        GeneralPolygon* peek(const sf::Vector2i& click);
 
-		void addPolygon(GeneralPolygon& polygon);
+        void addPolygon(GeneralPolygon& polygon);
 };
