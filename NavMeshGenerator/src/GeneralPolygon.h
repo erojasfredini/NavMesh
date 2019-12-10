@@ -4,12 +4,13 @@
 // y cambiar los nombres de las librerias contra la que linkeamos
 #define SFML_STATIC
 
-#include <SFML\\System.hpp>
-#include <SFML\\Window.hpp>
-#include <SFML\\Graphics.hpp>
-#include <SFML\\Audio.hpp>
+#include <SFML/System.hpp>
+#include <SFML/Window.hpp>
+#include <SFML/Graphics.hpp>
+#include <SFML/Audio.hpp>
 
 #include <SFML/OpenGL.hpp>
+#include <gl/glu.h> 
 
 // used to creates the cast operator to ClipperLib::Polygons class for easy communication with clipper library
 #include "..\Dependencies\clipper_ver5.1.6\clipper.hpp"
